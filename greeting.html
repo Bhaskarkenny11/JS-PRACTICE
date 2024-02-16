@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting</title>
+</head>
+<body>
+    <p id="msg"> welcome: </p>
+    
+    <input type="text" id="name" />
+    <p id="details">this is details id ot will be ovverided by its detailsHandle.innerhtml</p>
+    <script>
+        var msghandle=document.getElementById('msg');
+        var name=prompt("please input your name");
+        var nameHandle=document.getElementById('name');
+        var detailsHandle=document.getElementById('details'); 
+        msghandle.innerHTML="Welcome "+ name;
+
+        nameHandle.onfocus = function(){
+            detailsHandle.innerHTML="enter your name"
+        };
+        nameHandle.onblur = function() {
+            if(nameHandle.value.length==0){
+                detailsHandle.innerHTML="cannot be blank";
+            }
+            else{ 
+                detailsHandle.innerHTML='Hello ' + nameHandle.value + "! chanagiddiya??";
+            }  
+            };
+
+    </script>
+</body>
+</html>
