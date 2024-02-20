@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessGame</title>
+</head>
+<body>
+
+    <script>
+    var name=prompt("please enter your name");
+    var targetNumber=Math.round(Math.random()*100);
+    console.log(targetNumber);
+    var playerGuess=0;
+    var maxGuess=10;
+    while(playerGuess < maxGuess){
+           var guess=prompt("Guess my number");
+        if(guess < targetNumber){
+           console.log("OOPS!!! Your guess is too low! Try again."); 
+
+        } else if (guess > targetNumber) {
+           console.log("OOPS!!! your guess is too high");
+
+        } else {
+          console.log("you guessed correct "+ name + " good job");
+          break;   
+        }
+        playerGuess++ ;
+
+    }
+    
+    
+    </script>
+    
+</body>
+</html>
