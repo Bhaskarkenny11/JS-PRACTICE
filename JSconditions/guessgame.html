@@ -13,23 +13,44 @@
     console.log(targetNumber);
     var playerGuess=0;
     var maxGuess=10;
-    while(playerGuess < maxGuess){
-           var guess=prompt("Guess my number");
-        if(guess < targetNumber){
-           console.log("OOPS!!! Your guess is too low! Try again."); 
-
-        } else if (guess > targetNumber) {
-           console.log("OOPS!!! your guess is too high");
-
-        } else {
-          console.log("you guessed correct "+ name + " good job");
-          break;   
+    var min =1;
+    var max=100;
+    while(playerGuess < maxGuess)
+    {
+        var guess=Number(prompt("Guess my number "+min+ " and " + max));
+        if (!isNaN(guess))
+    
+                {
+                        if(guess < targetNumber)
+                            {
+                            console.log("OOPS!!! Your guess is too low!");
+                            min=guess;
+                            
+                            } 
+                        else if (guess > targetNumber) 
+                            {
+                            console.log("OOPS!!! your guess is too high ");
+                            max=guess;  
+                            }
+                        else if (guess===null)
+                            {
+                            console.log("you canceled the prompt");
+                            break;
+                            }
+                            
+                        else
+                            {
+                                console.log("you guessed correct "+ name + " good job");
+                                break;   
+                            }
+                        playerGuess++ ; 
+                }
+        else
+        {
+            console.log("you entered wrong datatype")
         }
-        playerGuess++ ;
 
-    }
-    
-    
+   }
     </script>
     
 </body>
