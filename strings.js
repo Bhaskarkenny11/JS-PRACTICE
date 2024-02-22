@@ -17,4 +17,6 @@ for (var i=0;i<words.length;i++)
 // var word=word[i]
 /*word[0].toUppercase()+word.substr(1,words.length)*/
 
-
+// substr method takes two arguments  ....substr(1,2)
+// 1 is from which index you want to start and 2 is up to wich index you want word 
+//ex  word.substr(1,words.length)  means it will take string from second character of word to end of the word
