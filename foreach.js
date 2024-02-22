@@ -8,4 +8,4 @@ words=sentence.split(" ") // split return array
                     output+=word
                 }
             );
- console.log(output)
+ console.log(output);
