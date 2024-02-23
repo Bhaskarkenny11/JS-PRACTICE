@@ -7,6 +7,7 @@ while(i<r)
 
  visited=queue.shift();
  queue.push(visited,visited)
+ //console.log(queue) use this to see loop
  i++
 
 }     
