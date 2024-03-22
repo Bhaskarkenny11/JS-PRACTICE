@@ -11,6 +11,9 @@ switch(day)
     case "tuesday":
     console.log("its tuesday")
     break;
+    case "wednesday":
+        console.log(day+"is middle of the week")
+        break;
     default:
         console.log("its invalid day")
 
