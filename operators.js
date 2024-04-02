@@ -6,3 +6,7 @@ console.log("a+b =" + a + b );//gives 34  instead of '7' because it adds the str
 console.log(typeof(a))
 // practice a++, ++a, a--,--a
 //a+=1, a-=1
+//== !=
+//===, !==
+
+//logival operators &&,||, !
