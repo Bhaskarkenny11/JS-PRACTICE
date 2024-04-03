@@ -16,7 +16,8 @@ const id=(FirstName[0] + lastName[0])
 console.log(id)
 console.log(typeof(fullName))
 console.log(fullName.split(" ")[0][0]+fullName.split(" ")[1][0])
+//"this is split and it returns array of two names and extracts first letter of first object...so...on [0][0]"+ first letter of second object
 console.log(fullName.trim())
 var str ="   hello  world!  "
-var trimm=console.log(str.trim())
+var trimm=console.log("this is trim removes spaces before and after ",str.trim())
 
