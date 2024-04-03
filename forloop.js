@@ -1,6 +1,6 @@
 var FirstName = "Kenny";
 var lastName="JENNY"
-var tags="ruby javascript rails ajax python  jquery"
+var tags="ruby javascript rails ajax python jquery"
 console.log ("the length of name is " + FirstName.length)
 console.log(FirstName.toUpperCase());
 console.log (lastName.toLowerCase());
@@ -9,6 +9,10 @@ console.log(tags.split(" "));
  for (var i=0;i<languages.length;i++)
  {
     console.log(languages[i].toUpperCase());
+    console.log(languages[i].charAt(0).toUpperCase()+ languages[i].slice(1));
+   //   if 
+   //  (languages[i].length==0)
+    break
  }
  
 const fullName= ((FirstName + " "+lastName))
