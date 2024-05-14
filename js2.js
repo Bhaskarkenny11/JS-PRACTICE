@@ -18,6 +18,7 @@ console.log(Array)
 Array.splice(1,2,3)// tries to removes element from index 1 to 2  but no element at index 1..to 2 so ....inserts 3 at 1st index 
 console.log(Array)
 console.log(typeof(Array2))
-
+const numbers=[0,1,2,3,4,5,]
+console.log(numbers)
 
 
